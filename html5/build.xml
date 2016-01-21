@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="C:\xampp\htdocs\cocosjs" default="compile">
+<project name="Javascript compress project" basedir="F:\cocos2d\WeChatGame" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
-             classpath="C:\cocos2d-js\tools\cocos2d-console\bin\..\plugins\project_compile\build_web/bin/compiler-1.7.jar"/>
+             classpath="D:\cocos2d\cocos2d-js-v3.0-rc3\tools\cocos2d-console\bin\..\plugins\project_compile\build_web/bin/compiler-1.7.jar"/>
 
     <target name="compile">
         <jscomp compilationLevel="simple" 
                 warning="quiet"
                 debug="false" 
-                output="C:\xampp\htdocs\cocosjs\publish\html5/game.min.js"
+                output="F:\cocos2d\WeChatGame\publish\html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="C:\xampp\htdocs\cocosjs\frameworks\cocos2d-html5">
+            <sources dir="F:\cocos2d\WeChatGame\frameworks\cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="CCDebugger.js"/>
                 <file name="cocos2d/core/utils/BinaryLoader.js"/>
@@ -42,8 +42,6 @@
                 <file name="cocos2d/core/event-manager/CCEventListener.js"/>
                 <file name="cocos2d/core/event-manager/CCEventManager.js"/>
                 <file name="cocos2d/core/event-manager/CCEventExtension.js"/>
-                <file name="cocos2d/core/renderer/RendererCanvas.js"/>
-                <file name="cocos2d/core/renderer/RendererWebGL.js"/>
                 <file name="cocos2d/core/base-nodes/BaseNodesWebGL.js"/>
                 <file name="cocos2d/core/base-nodes/BaseNodesPropertyDefine.js"/>
                 <file name="cocos2d/core/base-nodes/CCNode.js"/>
@@ -143,15 +141,13 @@
             </sources>
             <sources dir="${basedir}">
                 <file name="src/resource.js"/>
-                <file name="src/floor.js"/>
-                <file name="src/pipes.js"/>
-                <file name="src/bird.js"/>
-                <file name="src/background.js"/>
-                <file name="src/gamestatus.js"/>
-                <file name="src/gameover.js"/>
-                <file name="src/gameplay.js"/>
-                <file name="src/menu.js"/>
-                <file name="src/app.js"/>
+                <file name="src/config/config.js"/>
+                <file name="src/GamePlay/layer/GamePlayLayer.js"/>
+                <file name="src/GamePlay/sprite/BlockSprite.js"/>
+                <file name="src/MainMenu/layer/MainMenuLayer.js"/>
+                <file name="src/MainMenu/scene/MainMenu.js"/>
+                <file name="src/ResultUI/layer/gameOverLayer.js"/>
+                <file name="src/ResultUI/layer/trasitionLayer.js"/>
                 <file name="main.js"/>
 
             </sources>
