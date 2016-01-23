@@ -147,7 +147,6 @@
                 <file name="src/MainMenu/layer/MainMenuLayer.js"/>
                 <file name="src/MainMenu/scene/MainMenu.js"/>
                 <file name="src/ResultUI/layer/gameOverLayer.js"/>
-                <file name="src/ResultUI/layer/trasitionLayer.js"/>
                 <file name="main.js"/>
 
             </sources>
